@@ -10,13 +10,10 @@ int main(){
 
     int start = 0;
     int end = n-1;
-    int target = 9;
+    int target = 0;
     int midIndex = (start+end)/2;
 
-
-    // this loop is experimental and a better looping can be performed here
-
-    for(int i = 0; i<n ; i++){
+    while(start<=end){
 
         if(arr[midIndex]==target){
             cout<<"Got it at index "<< midIndex;
@@ -30,12 +27,10 @@ int main(){
             end = midIndex-1;
             midIndex = (start+end)/2;
         }
-
-        // this part is from my side I dont think this is a good approch
-
-        if(i==n-1){
-            cout<<"target not found";
-        }
         
+    }
+
+    if(start>end){
+        cout<<"Element Not Found";
     }
 }
