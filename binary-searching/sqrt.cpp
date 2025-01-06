@@ -42,5 +42,4 @@ int main(){
     }
 
     cout<<mid<<" is the Number ";
-
 }
